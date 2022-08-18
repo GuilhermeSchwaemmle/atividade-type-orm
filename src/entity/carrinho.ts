@@ -14,11 +14,10 @@ export class Carrinho {
     public preco!: number
 
     @ManyToOne(() => Venda, (venda) => venda.carrinho)
-    @JoinColumn({name:'id_venda'})
+    @JoinColumn({ name: 'id_venda' })
     public venda!: Venda
 
     @ManyToOne(() => Produto, (produto) => produto.carrinho)
-    @JoinColumn({name:'id_produto'})
+    @JoinColumn({ name: 'id_produto' })
     public produto!: Produto
-
 }

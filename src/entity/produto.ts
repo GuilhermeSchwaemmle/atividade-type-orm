@@ -17,5 +17,4 @@ export class Produto {
 
     @OneToMany(() => Carrinho, carrinho => carrinho.produto)
     public carrinho: Carrinho[];
-
 }

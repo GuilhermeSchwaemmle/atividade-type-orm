@@ -14,7 +14,7 @@ const dataSource = new DataSource({
     password: "1234",
     database: "postgres",
     // entities: ["src/entity/*.js"],
-    entities: [ Cliente, Venda, Produto,Carrinho],
+    entities: [Cliente, Venda, Produto, Carrinho],
     logging: false,
     synchronize: true,
 })

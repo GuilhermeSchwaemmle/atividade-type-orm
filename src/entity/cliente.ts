@@ -15,5 +15,4 @@ export class Cliente {
 
     @Column()
     email: string
-
 }

@@ -30,7 +30,7 @@ router.post("/", async (req: Request, res: Response) => {
 
 router.put("/:id", async (req: Request, res: Response) => {
     const user = await myDataSource.getRepository(Cliente).findOneBy({
-        
+
     })
     myDataSource.getRepository(Cliente).merge(user, req.body)
     const results = await myDataSource.getRepository(Cliente).save(user)
